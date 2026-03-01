@@ -1,0 +1,206 @@
+/* ======================================
+   Base Styles
+====================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ======================================
+   Banner Styles
+====================================== */
+.services-banner {
+    background-image: url("../images/banner-services.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.home-banner {
+    background-image: url("../images/banner-home.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.banner-text {
+    position: relative;
+    color: #ffffff;
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+.banner-text h2 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+/* ======================================
+   Navigation
+====================================== */
+
+nav {
+    background-color: #111;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 1.5rem;
+}
+
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 0;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.nav-list a:hover {
+    color: #c9a24d;
+}
+
+/* ======================================
+   Main Content
+====================================== */
+
+main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.intro h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* ======================================
+   Pricing Table
+====================================== */
+
+.pricing-section {
+    margin-top: 3rem;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.pricing-table caption {
+    caption-side: top;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.pricing-table thead {
+    background-color: #111;
+    color: #fff;
+}
+
+.pricing-table tbody tr:nth-of-type(even) {
+    background-color: #f1f1f1;
+}
+
+/* ======================================
+   Footer
+====================================== */
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* ======================================
+   Responsive Design
+====================================== */
+
+@media (max-width: 768px) {
+    .banner {
+        height: 220px;
+    }
+
+    .banner-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 0.5rem 0;
+    }
+}
+
+/* ======================================
+   Responsive Table Adjustments
+====================================== */
+
+@media (max-width: 768px) {
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .pricing-table td:last-child {
+        text-align: right;
+        font-weight: 600;
+    }
+
+    .pricing-table caption {
+        font-size: 1rem;
+    }
+}
