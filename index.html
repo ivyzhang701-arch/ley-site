@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LEY is a Boston-based luxury lifestyle consultancy founded by Ivy Zhang, offering private styling, travel, residence, and image advisory, billed by the hour."
+    />
+    <meta name="theme-color" content="#1c1b1b" />
+    <title>LEY — Luxury Services by Ivy</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,30..100;1,9..144,300..600,30..100&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="LEY — home">LEY</a>
+        <nav class="site-nav" id="siteNav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__cta">
+          <a class="btn btn--ghost btn--sm" href="contact.html" data-magnetic
+            >Consult</a
+          >
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="siteNav"
+            aria-label="Toggle navigation"
+          >
+            <span class="nav-toggle__bars"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img
+          src="images/photo/hero-lobby.jpg"
+          alt="A quiet lobby bathed in late-afternoon light."
+          loading="eager"
+        />
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-reveal>Boston, Massachusetts</p>
+        <h1
+          id="hero-title"
+          class="hero__title"
+          data-reveal
+          data-reveal-delay="1"
+        >
+          Service, held to the <em>quiet</em> standard.
+        </h1>
+        <p class="hero__lede" data-reveal data-reveal-delay="2">
+          LEY is a private lifestyle consultancy for people who prefer their
+          lives to arrive unhurried, considered, and already taken care of.
+        </p>
+        <div class="hero__meta" data-reveal data-reveal-delay="3">
+          <span>Founded<strong>2026</strong></span>
+          <span>Studio<strong>Boston, MA</strong></span>
+          <span>Engagements<strong>By referral</strong></span>
+          <span>Billing<strong>Hourly</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="eyebrow section-head__eyebrow">The approach</p>
+              <h2>Refined service, kept close to the quiet a home deserves.</h2>
+            </div>
+            <p>
+              Each engagement begins with a conversation. We speak for thirty
+              minutes without expectation, to understand whether our attention
+              is well placed for what you are trying to build.
+            </p>
+          </div>
+
+          <ol class="index-list" aria-label="Core services by category">
+            <li data-reveal>
+              <span class="index-list__no"></span>
+              <span class="index-list__title"
+                >Personal Styling &amp; Wardrobe</span
+              >
+              <span class="index-list__meta"
+                >Private showrooms, seasonal capsules, closet edits.</span
+              >
+              <span class="index-list__rate">$180 / hr</span>
+            </li>
+            <li data-reveal data-reveal-delay="1">
+              <span class="index-list__no"></span>
+              <span class="index-list__title">Luxury Travel</span>
+              <span class="index-list__meta"
+                >Itinerary design, partner concierge, on-trip support.</span
+              >
+              <span class="index-list__rate">$220 / hr</span>
+            </li>
+            <li data-reveal data-reveal-delay="2">
+              <span class="index-list__no"></span>
+              <span class="index-list__title">Residence &amp; Move-in</span>
+              <span class="index-list__meta"
+                >Relocation, sourcing, household liaison.</span
+              >
+              <span class="index-list__rate">$200 / hr</span>
+            </li>
+            <li data-reveal data-reveal-delay="3">
+              <span class="index-list__no"></span>
+              <span class="index-list__title">Wellness &amp; Recovery</span>
+              <span class="index-list__meta"
+                >Retreats, private instructors, in-home recovery.</span
+              >
+              <span class="index-list__rate">$160 / hr</span>
+            </li>
+            <li data-reveal data-reveal-delay="4">
+              <span class="index-list__no"></span>
+              <span class="index-list__title">Brand &amp; Image Advisory</span>
+              <span class="index-list__meta"
+                >Founders, artists, and public principals only.</span
+              >
+              <span class="index-list__rate">$300 / hr</span>
+            </li>
+          </ol>
+
+          <p style="margin-top: var(--space-3)" data-reveal>
+            <a class="link-arrow" href="services.html"
+              >See the full service list</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="editorial editorial--flip" data-reveal>
+            <figure class="editorial__media">
+              <img
+                src="images/photo/about-desk.jpg"
+                alt="A warm-lit desk in the LEY studio with a lamp and an open notebook."
+              />
+            </figure>
+            <div class="editorial__text">
+              <p class="eyebrow">Meet Ivy</p>
+              <h2>Ten years of private work, distilled into a studio.</h2>
+              <p>
+                Ivy Zhang spent the better part of a decade inside one of
+                Boston's oldest family offices, running the private side of
+                three principal households. Wardrobes, travel, residences,
+                difficult birthdays. The hundred small decisions that compound
+                into what a well-run life looks like.
+              </p>
+              <p>
+                LEY opened in 2026 to bring that same quality of attention to a
+                carefully chosen set of outside clients. The studio stays small
+                on purpose. When you hire Ivy, you are hiring Ivy — not a
+                pipeline.
+              </p>
+
+              <dl class="stats">
+                <div>
+                  <dt>Years on principal households</dt>
+                  <dd>10</dd>
+                </div>
+                <div>
+                  <dt>Concurrent clients, by design</dt>
+                  <dd>6</dd>
+                </div>
+                <div>
+                  <dt>Active cities</dt>
+                  <dd>Boston · New York · Milan</dd>
+                </div>
+                <div>
+                  <dt>Longest running engagement</dt>
+                  <dd>7 years</dd>
+                </div>
+              </dl>
+
+              <p class="signature">
+                <span class="signature__name">Ivy Zhang</span>
+                <span class="signature__role">Founder · LEY Studio</span>
+              </p>
+
+              <p style="margin-top: 2rem">
+                <a class="link-arrow" href="about.html">Read the full story</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" style="background: var(--cream)">
+        <div class="container-narrow">
+          <div class="pullquote" data-reveal>
+            <blockquote>
+              A well-run life is mostly <em>absence</em> — the absence of
+              friction, missed dinners, wrong sizes, the wrong country in
+              August.
+            </blockquote>
+            <cite>Ivy Zhang, Founder</cite>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band" aria-labelledby="cta-title">
+        <div class="container cta-band__inner" data-reveal>
+          <div>
+            <h2 id="cta-title" class="cta-band__title">
+              Begin with a <em>conversation</em>.
+            </h2>
+            <p class="cta-band__lede">
+              The first thirty minutes are on us — a private call to understand
+              what you are trying to build, and whether we are the right fit for
+              it. No sales team, no onboarding deck.
+            </p>
+          </div>
+          <div class="cta-band__right">
+            <dl class="cta-band__facts">
+              <div>
+                <dt>Response time</dt>
+                <dd>Within 48 h</dd>
+              </div>
+              <div>
+                <dt>First call</dt>
+                <dd>30 minutes · complimentary</dd>
+              </div>
+              <div>
+                <dt>Next opening</dt>
+                <dd>Autumn 2026</dd>
+              </div>
+              <div>
+                <dt>Engagements</dt>
+                <dd>By referral</dd>
+              </div>
+            </dl>
+            <a
+              class="btn btn--on-dark cta-band__cta"
+              href="contact.html"
+              data-magnetic
+              >Request a consultation</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="site-footer__top">
+          <p class="site-footer__lede">
+            A private lifestyle studio. Built in Boston, practiced across the
+            Atlantic corridor.
+          </p>
+          <div class="site-footer__hello">
+            <p>
+              Direct lines to the studio for press, referrals, and partner
+              enquiries. Client matters go through the consultation form.
+            </p>
+            <a class="link-arrow" href="contact.html">Start a conversation</a>
+          </div>
+        </div>
+        <div class="site-footer__grid">
+          <div class="site-footer__about">
+            <h4>Studio</h4>
+            <address>
+              One Copley Place, Suite 320<br />Boston, MA 02116<br />By
+              appointment
+            </address>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="support.html">Support</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Reach us</h4>
+            <ul>
+              <li>
+                <a href="mailto:hello@leystudio.com">hello@leystudio.com</a>
+              </li>
+              <li><a href="tel:+16175550148">+1 (617) 555-0148</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Hours</h4>
+            <ul>
+              <li>Mon – Thu &nbsp; 09:00–18:00</li>
+              <li>Friday &nbsp; 09:00–14:00</li>
+              <li>Saturday &nbsp; By appointment</li>
+              <li>Sunday &nbsp; Closed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__wordmark" aria-hidden="true">
+        <span>LEY</span>
+      </div>
+      <div class="container">
+        <div class="site-footer__bottom">
+          <span>&copy; <span id="footerYear">2026</span> LEY by Ivy Zhang</span>
+          <span>Made in Boston</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+  </body>
+</html>
